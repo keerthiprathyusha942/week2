@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+//JavaScript function that returns the average / mean
+//value for all numbers in an array.
+function arrayAverage(arr){
+    //Find the sum
+    var sum = 0;
+    for(var i in arr) {
+        sum += arr[i];
+    }
+    //Get the length of the array
+    var numbersCnt = arr.length;
+    document.write(sum)
+    document.write(sum/numbersCnt)
+    //Return the average / mean.
+    return (sum / numbersCnt);
+}
+var arr = new Array(1, 2, 5, 20, 25);
+var avg = arrayAverage(arr);
+console.log(avg);
+
+
+</script>
+
+</body>
+</html>
